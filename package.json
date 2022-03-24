@@ -1,19 +1,31 @@
 {
-  "name": "gatsbydemo",
+  "name": "gatsby-demo",
   "version": "1.0.0",
-  "description": "Test of Gatsby Cloud",
-  "main": "index.js",
+  "private": true,
+  "description": "gatsby-demo",
+  "author": "ArtemK123",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArtemK123/GatsbyDemo.git"
+  "dependencies": {
+    "gatsby": "^4.10.3",
+    "gatsby-plugin-sass": "^5.10.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.49.9"
   },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ArtemK123/GatsbyDemo/issues"
-  },
-  "homepage": "https://github.com/ArtemK123/GatsbyDemo#readme"
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.41",
+    "@types/react-dom": "^17.0.14",
+    "typescript": "^4.6.2"
+  }
 }
